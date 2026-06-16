@@ -1,0 +1,4 @@
+#!/bin/bash/
+#Write a script that takes a directory path as an argument and prints the total number of files in that directory.
+dir="$1"
+find $dir -type f | wc -l

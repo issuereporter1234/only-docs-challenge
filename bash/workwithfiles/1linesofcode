@@ -1,0 +1,3 @@
+#!/bin/bash
+#Write a script that reads all .py files in current directory and prints how many lines of code each one has.
+wc -l *

@@ -1,0 +1,9 @@
+#!/bin/bash/
+#Write a script that checks if a file exists and prints either File exists or File not found.
+FILE="$1"
+
+if [ -e "$FILE" ]; then
+    echo "File exists."
+else
+	echo "File not found." 
+fi
