@@ -1,0 +1,9 @@
+#!/bin/bash
+#Write a script that takes a filename as argument, checks if it exists, and if it does — prints how many lines it has. If not — prints File not found.
+FILE="$1"
+if [ -e "$FILE" ]; then
+	wc -l < "$FILE"
+
+else
+	echo "File not found."
+fi

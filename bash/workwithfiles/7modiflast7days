@@ -1,0 +1,9 @@
+#!/bin/bash
+#Write a script that takes a directory as argument and prints all files that were modified in the last 7 days.
+DIR="$1"
+WEEK=$((7 * 24 * 60 * 60))
+TODAY=$(date +%s)
+AWEEKAGO=$((TODAY - WEEK))
+#TZ=UTC date -d @"$AWEEKAGO"
+echo date -r "$DIR"*
+#echo "$AWEEKAGO"

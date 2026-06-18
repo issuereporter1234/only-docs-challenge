@@ -1,4 +1,4 @@
-#!/bin/bash/
+#!/bin/bash
 #Write a script that checks if a file exists and prints either File exists or File not found.
 FILE="$1"
 

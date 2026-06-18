@@ -1,0 +1,5 @@
+#!/bin/bash
+#Write a script that takes a log file as argument and prints how many times the word "error" appears in it.
+FILE="$1"
+
+cat "$FILE" | grep "error" -o | wc -w

@@ -1,0 +1,5 @@
+#!/bin/bash
+#Write a script that takes a directory as argument and prints the 3 largest files in it.
+DIR="$1"
+find "$DIR" -type f -exec du -hs {} \;| sort -rh | head -n 3
+
